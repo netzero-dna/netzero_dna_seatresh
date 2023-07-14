@@ -1,0 +1,673 @@
+'use strict';
+
+/** @type {import('sequelize-cli').Migration} */
+module.exports = {
+  async up (queryInterface, Sequelize) {
+    await queryInterface.bulkInsert('SeaTreshes', [
+      {
+        id: 1, 
+        local: '경상북도',
+        location: '영덕고래불',
+        count: 421,
+        weight: 3.4,
+        size: 0.008076,
+        objective_size: 'small',
+        latitude: 36.5998363,
+        longitude: 129.411597
+      },
+      {
+        id: 2, 
+        local: '충청남도', 
+        location: '당진석문',
+        count: 218,
+        weight: 2,
+        size: 0.009174,
+        objective_size: 'small',
+        latitude: 37.0005871,
+        longitude: 126.5919482
+      },
+      {
+        id: 3,
+        local: '강원도',
+        location: '강릉송정',
+        count: 781,
+        weight: 7.6,
+        size: 0.009731,
+        objective_size: 'small',
+        latitude: 37.7772052,
+        longitude: 128.9269702
+      },
+      {
+        id: 4, 
+        local: '강원도',
+        location: '동해노봉',
+        count: 1163,
+        weight: 11.7,
+        size: 0.01006,
+        objective_size: 'small',
+        latitude: 38.848848,
+        longitude: 135
+        },
+      {
+        id: 5,
+        local: '경상남도',
+        location: '마산봉암',
+        count: 903,
+        weight: 9.7,
+        size: 0.010742,
+        objective_size: 'small',
+        latitude: 35.2246659,
+        longitude: 128.6061178
+      },
+      {
+        id: 6,
+        local: '경상남도',
+        location: '거제두모',
+        count: 4614,
+        weight: 54.7,
+        size: 0.011855,
+        objective_size: 'small',
+        latitude: 34.8806427,
+        longitude: 128.6210824
+      },
+      {
+        id: 7,
+        local: '부산',
+        location: '부산해양대',
+        count: 1509,
+        weight: 18.2,
+        size: 0.012061,
+        objective_size: 'small',
+        latitude: 35.0762886,
+        longitude: 129.0889751
+      },
+      {
+        id: 8,
+        local: '경기도',
+        location: '시흥정왕',
+        count: 668,
+        weight: 8.4,
+        size: 0.012575,
+        objective_size: 'small',
+        latitude: 37.351816,
+        longitude: 126.742844
+      },
+      {
+        id: 9,
+        local: '울산',
+        location: '울산대왕암',
+        count: 1861,
+        weight: 27.7,
+        size: 0.014884,
+        objective_size: 'small',
+        latitude: 35.4923951,
+        longitude: 129.4395603
+      },
+      {
+        id: 10,
+        local: '부산',
+        location: '부산일광',
+        count: 2310,
+        weight: 37.8,
+        size: 0.016364,
+        objective_size: 'small',
+        latitude: 35.2872012,
+        longitude: 129.2231705
+      },
+      {
+        id: 11,
+        local: '경기도',
+        location: '화성서신',
+        count: 110,
+        weight: 1.8,
+        size: 0.016364,
+        objective_size: 'small',
+        latitude: 37.1616306,
+        longitude: 128.8654604
+      },
+      {
+        id: 12,
+        local: '강원도',
+        location: '속초청초',
+        count: 1118,
+        weight: 18.7,
+        size: 0.016726,
+        objective_size: 'small',
+        latitude: 38.2017757,
+        longitude: 128.5888508
+      },
+      {
+        id: 13,
+        local: '경상남도',
+        location: '통영욕지도',
+        count: 49102,
+        weight: 880.6,
+        size: 0.017934,
+        objective_size: 'small',
+        latitude: 34.6357426,
+        longitude: 128.2493998
+      },
+      {
+        id: 14,
+        local: '전라남도',
+        location: '여수안도',
+        count: 9999,
+        weight: 194.4,
+        size: 0.019442,
+        objective_size: 'small',
+        latitude: 34.4863914,
+        longitude: 127.8102223
+      },
+      {
+        id: 15,
+        local: '인천',
+        location: '인천백령도',
+        count: 657,
+        weight: 12.9,
+        size: 0.019635,
+        objective_size: 'small',
+        latitude: 37.9590027,
+        longitude: 124.6653814
+      },
+      {
+        id: 16,
+        local: '전라북도',
+        location: '군산선유도',
+        count: 199,
+        weight: 4,
+        size: 0.020101,
+        objective_size: 'small',
+        latitude: 35.8106824,
+        longitude: 126.4162652
+      },
+      {
+        id: 17,
+        local: '제주도',
+        location: '제주위미',
+        count: 1986,
+        weight: 42.8,
+        size: 0.021551,
+        objective_size: 'small',
+        latitude: 33.302706,
+        longitude: 126.6568975
+      },
+      {
+        id: 18,
+        local: '경상남도',
+        location: '고성하일',
+        count: 2004,
+        weight: 42.8,
+        size: 0.023154,
+        objective_size: 'small',
+        latitude: 38.3773762,
+        longitude: 128.3997526
+      },
+      {
+        id: 19,
+        local: '경기도',
+        location: '안산말부흥',
+        count: 114,
+        weight: 2.9,
+        size: 0.025439,
+        objective_size: 'small',
+        latitude: 37.3218778,
+        longitude: 126.8308848
+      },
+      {
+        id: 20,
+        local: '전라남도',
+        location: '고흥염포',
+        count: 367,
+        weight: 10.1,
+        size: 0.02752,
+        objective_size: 'small',
+        latitude: 34.427231,
+        longitude: 127.495114
+      },
+      {
+        id: 21,
+        local: '충청남도',
+        location: '보령삽시도',
+        count: 307,
+        weight: 8.6,
+        size: 0.028013,
+        objective_size: 'small',
+        latitude: 36.340923,
+        longitude: 126.3562296
+      },
+      {
+        id: 22,
+        local: '경상남도',
+        location: '울진후정',
+        count: 459,
+        weight: 13.4,
+        size: 0.029194,
+        objective_size: 'small',
+        latitude: 37.0539345,
+        longitude: 129.414773
+      },
+      {
+        id: 23,
+        local: '전라남도',
+        location: '여수백야도',
+        count: 368,
+        weight: 11,
+        size: 0.029891,
+        objective_size: 'small',
+        latitude: 34.6197616,
+        longitude: 127.6399016
+      },
+      {
+        id: 24,
+        local: '부산',
+        location: '부산가덕도',
+        count: 2613,
+        weight: 80.9,
+        size: 0.030961,
+        objective_size: 'small',
+        latitude: 35.0526206,
+        longitude: 128.8310012
+      },
+      {
+        id: 25,
+        local: '인천',
+        location: '강화여차리',
+        count: 415,
+        weight: 13.1,
+        size: 0.031566,
+        objective_size: 'small',
+        latitude: 37.604776,
+        longitude: 126.3995664
+      },
+      {
+        id: 26,
+        local: '전라남도',
+        location: '여수반월',
+        count: 251,
+        weight: 8,
+        size: 0.031873,
+        objective_size: 'small',
+        latitude: 34.7603737,
+        longitude: 127.6622221
+      },
+      {
+        id: 27,
+        local: '전라남도',
+        location: '완도보길도',
+        count: 2710,
+        weight: 96.9,
+        size: 0.035756,
+        objective_size: 'small',
+        latitude: 34.1543815,
+        longitude: 126.5406825
+      },
+      {
+        id: 28,
+        local: '인천',
+        location: '인천영흥도',
+        count: 59,
+        weight: 2.2,
+        size: 0.037288,
+        objective_size: 'small',
+        latitude: 37.258639,
+        longitude: 126.4619553
+      },
+      {
+        id: 29, 
+        local: '전라남도', 
+        location: '해남묵동리', 
+        count: 311, 
+        weight: 11.7, 
+        size: 0.037621, 
+        objective_size: 'small', 
+        latitude: 34.7060278, 
+        longitude: 126.6633679
+      },
+      {
+        id: 30, 
+        local: '전라남도', 
+        location: '여수거문도', 
+        count: 3280, 
+        weight: 130.7, 
+        size: 0.039848, 
+        objective_size: 'small', 
+        latitude: 34.0485456, 
+        longitude: 127.3183346
+      },
+      {
+        id: 31, 
+        local: '울산', 
+        location: '울주나사리', 
+        count: 1450, 
+        weight: 58.7, 
+        size: 0.040483, 
+        objective_size: 'small', 
+        latitude: 35.3615385, 
+        longitude: 129.3412262
+      },
+      {
+        id: 32, 
+        local: '전라남도', 
+        location: '진도하조도', 
+        count: 194, 
+        weight: 8.6, 
+        size: 0.04433, 
+        objective_size: 'small', 
+        latitude: 34.299912, 
+        longitude: 126.0510585
+      },
+      {
+        id: 33, 
+        local: '경상북도', 
+        location: '포항칠포', 
+        count: 1256, 
+        weight: 56.9, 
+        size: 0.045303, 
+        objective_size: 'small', 
+        latitude: 36.0929227, 
+        longitude: 129.3052666
+      },
+      {
+        id: 34, 
+        local: '경상남도', 
+        location: '통영망일봉', 
+        count: 1361, 
+        weight: 66.8, 
+        size: 0.049082, 
+        objective_size: 'small', 
+        latitude: 34.8486111, 
+        longitude: 128.4397222
+      },
+      {
+        id: 35, 
+        local: '경상북도', 
+        location: '포항구룡포', 
+        count: 4181, 
+        weight: 236.8, 
+        size: 0.056637, 
+        objective_size: 'small', 
+        latitude: 35.9853126, 
+        longitude: 129.5354697
+      },
+      {
+        id: 36, 
+        local: '충청남도', 
+        location: '태안백리포', 
+        count: 941, 
+        weight: 56.5, 
+        size: 0.060043, 
+        objective_size: 'small', 
+        latitude: 36.7456421, 
+        longitude: 126.2980528
+      },
+      {
+        id: 37, 
+        local: '경상남도', 
+        location: '사천아두도', 
+        count: 407, 
+        weight: 26.6, 
+        size: 0.065356, 
+        objective_size: 'small', 
+        latitude: 35.0481566, 
+        longitude: 128.1102419
+      },
+      {
+        id: 38, 
+        local: '인천', 
+        location: '인천영종도', 
+        count: 81, 
+        weight: 5.5, 
+        size: 0.067901, 
+        objective_size: 'small', 
+        latitude: 37.5000629, 
+        longitude: 126.5358479
+      },
+      {
+        id: 39, 
+        local: '충청남도', 
+        location: '태안안면도', 
+        count: 850, 
+        weight: 64.6, 
+        size: 0.076, 
+        objective_size: 'small', 
+        latitude: 36.5795048, 
+        longitude: 126.3293372
+      },
+      {
+        id: 40, 
+        local: '전라남도', 
+        location: '고흥신흥', 
+        count: 328, 
+        weight: 27.9, 
+        size: 0.085061, 
+        objective_size: 'small', 
+        latitude: 34.6112219, 
+        longitude: 127.284978
+      },
+      {
+        id: 41, 
+        local: '울산', 
+        location: '울산주전', 
+        count: 1610, 
+        weight: 138.7, 
+        size: 0.086149, 
+        objective_size: 'small', 
+        latitude: 35.5537228, 
+        longitude: 129.2380554
+      },
+      {
+        id: 42, 
+        local: '전라남도', 
+        location: '신안흑산도', 
+        count: 8017, 
+        weight: 724.6, 
+        size: 0.090383, 
+        objective_size: 'small', 
+        latitude: 34.6706637, 
+        longitude: 125.4196376
+      },
+      {
+        id: 43, 
+        local: '경상남도', 
+        location: '남해유구', 
+        count: 311, 
+        weight: 33.7, 
+        size: 0.10836, 
+        objective_size: 'small', 
+        latitude: 34.755287, 
+        longitude: 127.849763
+      },
+      {
+        id: 44, 
+        local: '전라남도', 
+        location: '완도평일도', 
+        count: 893, 
+        weight: 98.3, 
+        size: 0.110078, 
+        objective_size: 'small', 
+        latitude: 34.3504549, 
+        longitude: 127.0436395
+      },
+      {
+        id: 45, 
+        local: '전라남도', 
+        location: '완도신지도', 
+        count: 765, 
+        weight: 88.6, 
+        size: 0.115817, 
+        objective_size: 'small', 
+        latitude: 34.3306713, 
+        longitude: 126.8509548
+      },
+      {
+        id: 46, 
+        local: '전라남도', 
+        location: '신안우이도', 
+        count: 3440, 
+        weight: 399.6, 
+        size: 0.116163, 
+        objective_size: 'small', 
+        latitude: 34.6131494, 
+        longitude: 125.8444875
+      }, 
+      {
+        id: 47, 
+        local: '전라남도', 
+        location: '진도가사도', 
+        count: 1501, 
+        weight: 186.6, 
+        size: 0.124317, 
+        objective_size: 'small', 
+        latitude: 34.4815572, 
+        longitude: 126.0499433
+      },
+      {
+        id: 48, 
+        local: '제주도', 
+        location: '제주사계리', 
+        count: 441, 
+        weight: 61.9, 
+        size: 0.140363, 
+        objective_size: 'small', 
+        latitude: 33.2383758, 
+        longitude: 126.3026575
+      },
+      {
+        id: 49, 
+        local: '전라북도', 
+        location: '고창동호', 
+        count: 728, 
+        weight: 104.3, 
+        size: 0.143269, 
+        objective_size: 'small', 
+        latitude: 35.517837, 
+        longitude: 126.484016
+      },
+      {
+        id: 50, 
+        local: '전라남도', 
+        location: '해남송평', 
+        count: 440, 
+        weight: 104.3, 
+        size: 0.143269, 
+        objective_size: 'small', 
+        latitude: 34.5732516, 
+        longitude: 126.5989274
+      },
+      {
+        id: 51, 
+        local: '제주도', 
+        location: '제주김녕리', 
+        count: 833, 
+        weight: 146, 
+        size: 0.17527, 
+        objective_size: 'small', 
+        latitude: 33.5389636, 
+        longitude: 126.7494481
+      },
+      {
+        id: 52, 
+        local: '전라남도', 
+        location: '신안고장', 
+        count: 534, 
+        weight: 109.8, 
+        size: 0.205618, 
+        objective_size: 'small', 
+        latitude: 34.827332, 
+        longitude: 126.101074
+      },
+      {
+        id: 53, 
+        local: '전라남도', 
+        location: '신안임자도', 
+        count: 132, 
+        weight: 30, 
+        size: 0.227273, 
+        objective_size: 'small', 
+        latitude: 35.0889856, 
+        longitude: 126.0876199
+      },
+      {
+        id: 54, 
+        local: '전라남도', 
+        location: '신안압해도', 
+        count: 261, 
+        weight: 66.8, 
+        size: 0.255939, 
+        objective_size: 'small', 
+        latitude: 34.8693765, 
+        longitude: 126.3109373
+      },
+      {
+        id: 55, 
+        local: '경상북도', 
+        location: '울릉현포', 
+        count: 1530, 
+        weight: 407.3, 
+        size: 0.266209, 
+        objective_size: 'small', 
+        latitude: 37.4844171, 
+        longitude: 130.9058002
+      },
+      {
+        id: 56, 
+        local: '전라남도', 
+        location: '해남예락', 
+        count: 385, 
+        weight: 113.5, 
+        size: 0.294805, 
+        objective_size: 'small', 
+        latitude: 34.614218, 
+        longitude: 126.292005
+      },
+      {
+        id: 57, 
+        local: '전라남도', 
+        location: '영광백바위', 
+        count: 246, 
+        weight: 78.8, 
+        size: 0.320325, 
+        objective_size: 'small', 
+        latitude: 35.2428319, 
+        longitude: 126.306262
+      },
+      {
+        id: 58, 
+        local: '충청남도', 
+        location: '서천다사항', 
+        count: 179, 
+        weight: 112, 
+        size: 0.625698, 
+        objective_size: 'middle', 
+        latitude: 36.0965952, 
+        longitude: 126.6127398
+      },
+      {
+        id: 59, 
+        local: '전라북도', 
+        location: '부안변산', 
+        count: 174, 
+        weight: 181.6, 
+        size: 1.043678, 
+        objective_size: 'big', 
+        latitude: 35.680833, 
+        longitude: 126.5317247
+      },
+      {
+        id: 60, 
+        local: '충청남도', 
+        location: '보령석대도', 
+        count: 106, 
+        weight: 122.6, 
+        size: 1.156604, 
+        objective_size: 'big', 
+        latitude: 36.2392619, 
+        longitude: 126.5317247
+      }
+    ])
+  },
+
+  async down (queryInterface, Sequelize) {
+    await queryInterface.bulkDelete('SeaTreshes', null, {});
+  }
+};
