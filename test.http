@@ -1,1 +1,1 @@
-GET http://localhost:3000/api/seatreshes?local=서울
+GET http://52.78.65.165:22/api/seatreshes
