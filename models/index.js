@@ -4,7 +4,7 @@ const config = require('../config/config.json');
 // 데이터베이스 연결
 const {
   username, password, database, host, dialect,
-} = config.development;
+} = config.production;
 
 const sequelize = new Sequelize(database, username, password, {
   host,
