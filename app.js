@@ -2,6 +2,10 @@ const express = require('express');
 const app = express();
 const db = require('./models/index.js');
 const {SeaTresh} = db;
+const cors = require('cors');
+
+app.use(cors());
+
 
 // 지역에 따른 데이터 조회
 app.get('/api/seatreshes', async (request, response) => {
